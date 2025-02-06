@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body>
 
-    </body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+<div class="text-center">
+    <h1>Welcome to {{ config('app.name', 'Laravel') }}</h1>
+    <p>Please login or register to continue.</p>
+</div>
+@endsection
